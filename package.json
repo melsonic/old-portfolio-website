@@ -1,0 +1,33 @@
+{
+  "name": "portfolio",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "devstart": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@next/font": "13.0.7",
+    "@reduxjs/toolkit": "^1.9.1",
+    "bcrypt": "^5.1.0",
+    "bcryptjs": "^2.4.3",
+    "eslint": "8.30.0",
+    "eslint-config-next": "13.0.7",
+    "jsonwebtoken": "^9.0.0",
+    "mongodb": "^4.13.0",
+    "mongoose": "^6.8.1",
+    "next": "13.0.7",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-icons": "^4.7.1",
+    "react-redux": "^8.0.5",
+    "vscode-html-languageservice": "^5.0.3"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.13",
+    "postcss": "^8.4.20",
+    "tailwindcss": "^3.2.4"
+  }
+}

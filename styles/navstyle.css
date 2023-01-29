@@ -1,0 +1,13 @@
+.navbar {
+  @apply fixed w-screen flex justify-between sm:items-center px-4 py-6 text-white z-10 md:justify-evenly;
+}
+
+/* after scrolling */
+.navbarbg {
+  @apply bg-gray-300 text-gray-800 py-4 duration-500;
+}
+
+/* .navbarbgblue {
+  @apply bg-blue-400 text-gray-600 py-4 duration-500;
+} */
+

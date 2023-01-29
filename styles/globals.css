@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  background-color: rgb(245, 245, 255);
+  overflow-x: hidden;
+}
+
+.lang-icon-box {
+  @apply h-16 w-16 rounded-full bg-white flex justify-center items-center;
+}
+
+.lang-icon {
+  @apply h-12 w-12;
+}
+
+.lang-icon:hover {
+  @apply h-16 w-16;
+  transition: 300ms all;
+}
+
+input{
+  @apply w-96 bg-gray-200 text-gray-700 border-none rounded-2xl p-4;
+}
+
+input::placeholder{
+  @apply text-gray-500;
+}
+
+input:focus{
+  outline: none;
+}
+
+.footer-icon{
+  @apply h-12 w-12 text-white mx-4;
+}

@@ -1,1 +1,20 @@
-GET http://localhost:3000/api/login
+POST http://localhost:3000/api/login
+Content-Type: appplication/json 
+
+{
+  "username": "melsonic",
+  "password": "123"
+}
+
+###
+
+POST http://localhost:3000/api/register
+Content-Type: application/json
+
+{
+  "username": "melsonic",
+  "name": "Madhurjya Kalita",
+  "email": "melsonic@gmail.com",
+  "password": "123",
+  "phone": "9503818657"
+}

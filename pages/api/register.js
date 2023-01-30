@@ -1,5 +1,5 @@
-import { connectToDatabase } from '../../../util/mongodb';
-import User from '../../../models/User';
+import { connectToDatabase } from '../../util/mongodb.js';
+import User from '../../models/User.js';
 import bcrypt from 'bcryptjs'
 
 export default async function handler(req, res) {
@@ -25,38 +25,37 @@ export default async function handler(req, res) {
 			const email = req.body?.email;
 			const password = req.body?.password;
 			const phone = req.body?.phone;
-			User.findOne({ $or: [{ username: uname }, { email: email }, { phone: phone }] }, function(err, result) {
-
-				if (err) res.send("An error occured");
+			User.findOne({ $or: [{ username: uname }, { email: email }, { phone: phone }] }, function (err, result) {
 
 				if (result == null) {
-
-					const salt = bcrypt.genSaltSync(10);
+					const salt = bcrypt.genSaltSync();
 					const hashpassword = bcrypt.hashSync(password, salt);
 					let user = req.body;
-					user["password"] = hashpassword;
-					const u1 = new User(user);
-
-					u1.save((err, _savedDocument) => {
-
-						if (err) {
-							res.status(404).send({ message: "Error saving data" });
-						}
-
+					user.password = hashpassword;
+					const u1 = new User({
+						name: user.name,
+						email: email,
+						username: uname,
+						password: hashpassword,
+						phone: phone
 					});
 
+					u1.save((err, _savedDocument) => {
+						if (err) {
+							res.status(404).json({ message: "Error saving data" });
+						}else {
+							res.status(201).json({
+								message: "User saved successfully"
+							})
+						}
+					});
 				} else {
-					res.status(404).send({ message: "user already exists." });
+					res.status(404).json({ message: "user already exists." });
 				}
-
 			})
 
-			res.status(201).send("user saved successfully");
-
 		} catch (err) {
-
 			res.status(404).send({ message: "Error posting data" });
-
 		}
 
 	} else if (method === "PUT") {

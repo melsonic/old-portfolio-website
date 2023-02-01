@@ -35,4 +35,4 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 # portfolio-frontend
 # portfolio website
 
-[Open google](https://google.com)
+<a href="https://google.com" target="_blank" >google</a>

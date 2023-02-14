@@ -1,0 +1,27 @@
+total 252
+drwxrwxr-x  14 neilbenz neilbenz   4096 Feb  3 22:36 .
+drwxrwxr-x   8 neilbenz neilbenz   4096 Jan 31 15:39 ..
+drwxr-xr-x   2 neilbenz neilbenz   4096 Jan 28 10:27 app
+drwxrwxr-x   2 neilbenz neilbenz   4096 Jan 28 19:03 components
+-rw-rw-r--   1 neilbenz neilbenz    124 Dec 26 23:13 .env
+-rw-r--r--   1 neilbenz neilbenz     40 Dec 18 11:39 .eslintrc.json
+drwxrwxr-x   8 neilbenz neilbenz   4096 Feb  3 22:30 .git
+-rw-r--r--   1 neilbenz neilbenz    365 Jan 30 16:56 .gitignore
+drwxrwxr-x   2 neilbenz neilbenz   4096 Jan  4 00:03 models
+drwxrwxr-x   5 neilbenz neilbenz   4096 Jan 30 19:28 .next
+-rw-r--r--   1 neilbenz neilbenz    118 Dec 18 11:39 next.config.js
+drwxrwxr-x 340 neilbenz neilbenz  12288 Feb  2 01:18 node_modules
+-rw-rw-r--   1 neilbenz neilbenz      0 Feb  3 22:36 out.txt
+-rw-rw-r--   1 neilbenz neilbenz    760 Jan 28 09:58 package.json
+drwxrwxr-x   3 neilbenz neilbenz   4096 Feb  3 22:30 pages
+-rw-rw-r--   1 neilbenz neilbenz     82 Dec 18 13:24 postcss.config.js
+drwxrwxr-x   2 neilbenz neilbenz   4096 Dec 23 00:54 public
+-rw-r--r--   1 neilbenz neilbenz   1622 Jan 25 18:58 README.md
+-rw-r--r--   1 neilbenz neilbenz    336 Jan 30 16:05 requests.rest
+drwxrwxr-x   2 neilbenz neilbenz   4096 Jan  3 20:09 slices
+-rw-rw-r--   1 neilbenz neilbenz    106 Dec 27 01:08 store.js
+drwxrwxr-x   2 neilbenz neilbenz   4096 Jan 28 18:04 styles
+-rw-rw-r--   1 neilbenz neilbenz    245 Dec 20 09:44 tailwind.config.js
+drwxrwxr-x   2 neilbenz neilbenz   4096 Jan 27 16:41 util
+drwxrwxr-x   2 neilbenz neilbenz   4096 Dec 18 13:53 .vscode
+-rw-rw-r--   1 neilbenz neilbenz 148757 Jan 28 09:58 yarn.lock

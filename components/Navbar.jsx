@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Image from 'next/image';
 import { GoMarkGithub } from 'react-icons/go';
 import { AiFillTwitterCircle, AiFillLinkedin } from 'react-icons/ai';
 import { IoMenu } from 'react-icons/io5';
@@ -27,7 +28,7 @@ export default function Navbar() {
 
 	return (
 		<div className={scrolled ? 'navbar navbarbg' : 'navbar'}>
-			<img src="#" alt="logo" className={`flex text-xl`} />
+			<Image src="/../public/plogo.png" alt='logo' width={120} height={10} className={`flex`} />
 
 			{/* menu  */}
 			<div className={clicked ? `flex flex-col pt-8 sm:flex-row sm:bg-transparent sm:pt-0 transition-transform` : `hidden sm:flex flex-row sm:bg-transparent`} >

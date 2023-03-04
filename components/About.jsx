@@ -7,7 +7,7 @@ export default function About() {
 			<div className="max-w-6xl flex flex-col lg:flex-row items-center mx-8">
 
 				{/* image */}
-				<img src="melsonic.jpg" alt="my-image" className="w-48  object-cover  rounded-full aspect-square border-4 border-[#575757] mb-12 lg:mr-8 lg:mb-0" />
+				<img src="melsonic.webp" alt="my-image" className="w-48  object-cover  rounded-full aspect-square border-4 border-[#575757] mb-12 lg:mr-8 lg:mb-0" />
 
 				{/* about */}
 				<p className="text-lg text-justify lg:ml-8 lg:text-left ">

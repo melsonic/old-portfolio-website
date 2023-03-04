@@ -28,7 +28,7 @@ export default function Navbar() {
 
 	return (
 		<div className={scrolled ? 'navbar navbarbg' : 'navbar'}>
-			<Image src="/../public/plogo.png" alt='logo' width={120} height={10} className={`flex`} />
+			<Image  alt='logo' width={120} height={10} className={`flex h-1`} />
 
 			{/* menu  */}
 			<div className={clicked ? `flex flex-col pt-8 sm:flex-row sm:bg-transparent sm:pt-0 transition-transform` : `hidden sm:flex flex-row sm:bg-transparent`} >
